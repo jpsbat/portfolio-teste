@@ -1,0 +1,41 @@
+.skills {
+  padding: 2rem;
+}
+
+.title {
+  position: relative;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #0077cc;
+  margin-top: 8px;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skillItem {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skillItem:hover {
+  transform: scale(1.05);
+  background-color: #005fa3;
+}
